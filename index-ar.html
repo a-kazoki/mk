@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>AlMokhtabar</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSS Files -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/css-index-red.css" rel="stylesheet" media="screen"> 
+    
+<script>
+    var apiurl = "http://mk.com",
+        language = "AR",
+        lang = "ar";
+</script>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+    body { padding-top: 50px; }
+    @media screen and (max-width: 991px) {body { padding-top: 100px; }}
+    @media screen and (max-width: 766px) {body { padding-top: 50px; }}
+    @media screen and (max-width: 239px) {body { padding-top: 100px; }}
+    #map {height: 450px}
+</style>
+</head>
+  
+<body data-spy="scroll" data-target="#navbar-scroll" ng-app="mainApp" ng-controller="homeCtrl">
+
+<!-- /.preloader -->
+<div id="preloader"></div>
+<div id="top"></div>
+    
+    
+    
+    
+    <!-- /.parallax full screen background image -->
+    <div class="fullscreen landing parallax" style="background-image:url('images/bg.jpg');" data-img-width="2000" data-img-height="1333" data-diff="100">
+
+        <!-- NAVIGATION -->
+        <div id="menu">
+            <nav class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-backyard">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand site-name" href="#top"><img src="images/logo2.png" alt="logo"></a>
+                      </div>
+
+                      <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#contact">تواصل معنا</a></li>
+                            <li><a href="career-ar.html">وظائف</a></li>
+                            <li><a href="#package">اخبار &amp; اعلام</a></li>
+                            <li><a href="#location">الفروع</a></li>
+                            <li><a href="https://results.almokhtabar.com/">الزيارة المنزلية</a></li>
+                            <li><a href="#feature">الخدمات</a></li>
+                            <li><a href="https://results.almokhtabar.com/">نتائج التحاليل</a></li>
+                            <li><a href="#intro">من نحن</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <!-- /.logo -->
+                        <div class="logo wow fadeInDown"> <a href=""><img src="images/logo.png" alt="logo"></a></div>
+                    </div> 
+
+                    <!-- /.signup form -->
+                    <div class="col-md-5" style="padding-top: 30px">
+                           <!-- /.header button -->
+                        <div class="head-btn wow fadeInLeft">
+                            <a href="index.html" class=" btn btn-danger"> English <i class="fa fa-arrow-right" aria-hidden="true" style="color: #fff"></i></a>
+                            <!-- search form -->
+                             <form class="sidebar-form col-xs-8 search-form-1">
+                               <div class="input-group">
+                                 <input type="text" id="searchfield" class="form-control" placeholder="بحث " > 
+                                 <span class="input-group-btn">
+                                    <button type="submit" name="search" id="search-btn" class="btn btn-flat search-btn" onclick="var searchfor = document.getElementById('searchfield').value; document.getElementById('searchfield').value = ''; find(searchfor);"><i class="fa fa-search"></i>
+                                    </button>
+                                  </span> 
+                                </div>
+                              </form>
+                            <!-- /.search form -->
+                        </div>
+                    </div>
+                </div>
+                <div dir="rtl">
+                    <h1 class="wow fadeInLeft">
+                        جودة العناية بكم &amp; الوصول لحياة صحية
+                    </h1>
+                    <div class="landing-text wow fadeInUp">
+                        <p></p>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+<section dir="rtl">
+    <!-- /.intro section -->
+    <div id="intro">
+        <div class="container">
+            <div class="row">
+
+            <!-- /.intro image -->
+                <div class="col-md-6 intro-pic wow slideInLeft">
+                    <img src="images/intro-image.jpg" alt="image" class="img-responsive">
+                </div>	
+
+                <!-- /.intro content -->
+                <div class="col-md-6 wow slideInRight">
+                    <h2>اهلا بكم في معامل المختبر</h2>
+                    <p><a href="">المختبر</a> <p ng-bind-html="aboutparas[0].Description"></p>
+                    </p>
+
+                        <div class="btn-section"><a href="about-us-ar.html" class="btn-default">اعلم المزيد</a></div>
+
+                </div>
+            </div>			  
+        </div>
+    </div>
+
+    <!-- /.Services section -->
+    <div id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-sm-12 text-center feature-title">
+                <!-- /.services title -->
+                    <h2>خدمات المختبر</h2>
+                </div>
+            </div>
+            <div class="row row-feat">
+                <div class="col-md-4 text-center">
+
+                <!-- /.Services image -->
+                    <div class="feature-img">
+                        <img src="images/feature-image.jpg" alt="image" class="img-responsive wow fadeInLeft">
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <!-- /.feature 1 -->
+                    <div class="col-sm-6 feat-list">
+                        <i class="fa fa-user fa-lg wow fadeInUp" data-wow-delay="0.2s" ></i>
+                        <div class="inner">
+                            <h4>للافراد</h4>
+                            <ul>
+                                <li style="padding-bottom: 5px"><a href="https://results.almokhtabar.com/" class="colorhover">نتائج تحاليل</a></li>
+                                <li style="padding-bottom: 5px"><a href="https://results.almokhtabar.com/" class="colorhover">مكتبة النتائج</a></li>
+                                <li style="padding-bottom: 5px"><a href="https://results.almokhtabar.com/" class="colorhover">الزيارة المنزلية</a></li>
+                                <li style="padding-bottom: 5px"><a href="https://results.almokhtabar.com/" class="colorhover">احتياطات التحاليل</a></li>
+                                <li style="padding-bottom: 5px"><a href="https://results.almokhtabar.com/" class="colorhover">نصائح صحية</a></li>
+                                <li style="padding-bottom: 5px"><a href="https://results.almokhtabar.com/" class="colorhover">باقات الخصم</a></li>
+                                <li><a href="https://results.almokhtabar.com/" class="colorhover">مركز التشخيص الطبي</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <!-- /.feature 9 -->
+                    <div class="col-sm-6 feat-list">
+                        <i class="fa fa-building-o fa-lg fadeInUp" data-wow-delay="1.8s"></i>
+                        <div class="inner">
+                            <h4>للشركات</h4>
+                            <ul>
+                                <li>برامج ابحاث</li>
+                                <li>تامين صحي</li>
+                                <li><a href="https://results.almokhtabar.com/" class="colorhover">تعاقد معمل الى معمل</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- /.feature 2 section -->
+    <div id="feature-2">
+        <div class="container">
+            <div class="row">
+                <!-- /.feature image -->
+                <div class="col-md-12 feature-2-pic wow fadeInRight">
+                    <img src="images/feature2-image.png" alt="macbook" class="img-responsive">
+                </div>				  
+            </div>			  
+
+        </div>
+    </div>
+
+    <!-- /.location section -->
+<div id="location">
+	
+	  <div class="container-wrapper">
+		<div class="container">
+	   <div class="text-center header-text">
+		 <!-- /.pricing title -->
+		   <h2 class="wow fadeInLeft"> اوجد الفروع</h2>
+		   <p class="wow fadeInLeft" > اماكن الفروع, اعرف اقرب فرع لك</p>
+			<div class="title-line wow fadeInRight"></div>
+		</div>
+			<div class="col-md-8">
+			<div id="map"></div>
+                
+                <ul ng-if="selectedbranch" style="list-style-type: none">
+                    <li>الاسم: {{selectedbranch.Name}}</li>
+                    <li>المحافظة: {{selectedbranch.City}}</li>
+                    <li>العنوان: {{selectedbranch.Address}}</li>
+                    <li>ارقام التليفون: {{selectedbranch.Contacts}}</li>
+                </ul>
+		</div>
+			<div class="col-md-4 col-sm-12 text-center " onLoad="initMap()">
+				<div class="signup-header  wow fadeInUp">
+				    <i class="fa fa-map-marker fa-5x" style="color: #fff" ></i>
+					<h3 class="form-title text-center"> اوجد الفروع</h3>
+					<form class="form-header">
+                        <div class="form-group col-xs-12">
+							<select class="btn btn-primary" style="padding: 5px" ng-model="selectedcountry">
+                                <option value="" disabled selected>البلد</option>
+                                <option>مصر</option>
+                            </select>
+						</div>
+						<div class="form-group col-xs-12">
+							<select class="btn btn-primary" style="padding: 5px" ng-model="selectedbranch" ng-change="selectbranch()">
+                                <option value="" disabled selected>الفرع</option>
+                                <option ng-repeat="branch in mybranches" ng-value=branch>{{branch.Name}}</option>
+                            </select>
+						</div>
+                            <input type="text" style="display:none" ng-model="latitude" id="lat" value="30.059368"/>
+                            <input type="text" style="display:none" ng-model="longitude" id="lng" value="31.204958"/>
+						<div class="form-group last col-xs-12 ">
+							<input type="submit" class="btn btn-warning btn-block btn-lg" value="اين على الخريطة" onclick="initMap()">
+						</div>
+						
+					</form>
+				</div>
+			</div>
+            
+		</div>	
+	  </div>
+	
+</div>
+
+    <!-- /.package section -->
+    <div id="package">
+        <div class="container">
+            <div class="text-center">	
+                <!-- /.package title -->
+                <h2 class="wow fadeInLeft">الق نظرة على مركز التشخيص</h2>
+                <p class="wow fadeInLeft" >لقد انشئنا مكان حيث كل التشخيصات الطبية و الخدمات تحت سقف واحد </p>
+                <div class="title-line wow fadeInRight"></div>
+            </div>
+            <div class="row package-option">
+                <div ng-repeat="package in allnews">
+                    <!-- /.package 1 -->
+                    <div class="col-sm-4">
+                      <div class="price-box wow fadeInUp">
+                       <div class="price-heading text-center">			   
+                       <!-- /.package icon -->
+                            <img ng-src="https://mobresults.alborglab.com:88{{package.ImageFile.substring(1)}}" class="img-responsive">
+
+                            <!-- /.package name -->
+                            <h3><a href="">{{package.Title}}</a></h3>
+                       </div>
+                        <!-- /.package features -->
+                       <ul class="price-feature text-center">
+
+                          <li>{{package.MinDescription.slice(0, 80)}} ...</li>				  
+                       </ul>	   
+                       <!-- /.package button -->
+                       <div class="price-footer text-center">
+                         <a class="btn btn-price" href="" data-toggle="modal" data-target=".bs-example2-modal{{package.Id}}">المزيد</a>
+                        </div>	
+                      </div>
+                    </div>
+                    <div class="modal fade bs-example2-modal{{package.Id}}">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header" >
+                                    <button class="close" data-dismiss="modal" ><span>&times;</span></button>
+                                    <h3 class="modal-title text-center" >{{package.Title}}</h3>
+                                </div>
+                                <div class="modal-body" >
+                                    <p ng-bind-html="package.BigDescription"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.contact section -->
+    <div id="contact">
+        <div class="contact fullscreen parallax" style="background-image:url('images/bg.jpg');" data-img-width="2000" data-img-height="1334" data-diff="100">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row contact-row">
+
+                        <!-- /.address and contact -->
+                        <div class="col-sm-5 contact-left wow fadeInUp">
+                            <h2><span class="highlight">للتواصل</span> معنا</h2>
+                                <ul style="list-style-type:none">
+                                    <li style="font-size: 1.4em; color: #fff"><span class="highlight">&nbsp;<i class="fa fa-mobile-phone fa-lg"></span></i> &nbsp; 19014</li>
+                                    <li style="font-size: 1.4em; color: #fff"><span class="highlight"><i class="fa fa-envelope-o"></i></span> &nbsp; info@almokhtabar.com</li>
+                                </ul>
+                        </div>
+
+                        <!-- /.contact form -->
+                        <div class="col-sm-7 contact-right">
+                            <form id="contact-form" class="form-horizontal">
+                                <div class="form-group">
+                                <input type="text" name="Name" id="Name" class="form-control wow fadeInUp" placeholder="الاسم" ng-model="feedname"/>
+                                </div>
+                                <div class="form-group">
+                                <input type="text" name="Email" id="Email" class="form-control wow fadeInUp" placeholder="البريد الإلكتروني" ng-model="feedemail"/>
+                                </div>
+                                <div class="form-group">
+                                <input type="text" name="Name" id="mobile" class="form-control wow fadeInUp" placeholder="رقم الهاتف" ng-model="feedno"/>
+                                </div>	
+                                <div class="form-group">
+                                <textarea name="Message" rows="20" cols="20" id="Message" class="form-control input-message wow fadeInUp"  placeholder="رسالتك" ng-model="feedmsg"></textarea>
+                                </div>
+                                <div class="form-group">
+                                <input type="submit" name="submit" value="ارسال" class="btn btn-success wow fadeInUp" ng-click="feedback()" onclick="alert('شكرا على ابداء رايكم!');" />
+                                </div>
+                            </form>		
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    
+    
+    
+<!-- /.footer -->
+<footer id="footer">
+	<div class="container">
+		<div class="col-sm-4 col-sm-offset-4">
+			<!-- /.social links -->
+				<div class="social text-center">
+					<ul>
+						<li><a class="wow fadeInUp" href="https://twitter.com/almokhtabar"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="wow fadeInUp" href="https://www.facebook.com/almokhtabar" data-wow-delay="0.2s"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="wow fadeInUp" href="https://plus.google.com/" data-wow-delay="0.4s"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>	
+			<div class="text-center wow fadeInUp" style="font-size: 14px;">Copyright Almokhtabar developed by <a href="http://www.Yackeen.com">Yackeen</a></div>
+			<a href="#" class="scrollToTop"><i class="pe-7s-up-arrow pe-va"></i></a>
+		</div>	
+	</div>	
+</footer>
+	
+	<!-- /.javascript files -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   <!-- <script src="http://maps.google.com/maps/api/js?sensor=true"></script>-->  
+    <script src="js/jquery.sticky.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/custom.js"></script>
+    <script>
+            function initMap() {
+                var uluru = {lat: Number(document.getElementById("lat").value), lng: Number(document.getElementById("lng").value)}; 
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPWty1xxVib9a3Q9Lw6Z6wT82Fj--rRg8&callback=initMap">
+        </script>
+	<script src="js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="js/plugins.js"></script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>AlMokhtabar</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSS Files -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/css-index-red.css" rel="stylesheet" media="screen"> 
+    
+<script>
+    var apiurl = "http://mk.com";
+</script>
+<script>
+    var language = "EN",
+        lang = "en";
+</script>
+
+<!-- Google Fonts -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
+
+<style>
+    body { padding-top: 50px; }
+    @media screen and (max-width: 991px) {body { padding-top: 100px; }}
+    @media screen and (max-width: 767px) {body { padding-top: 50px; }}
+    @media screen and (max-width: 240px) {body { padding-top: 100px; }}
+</style>
+</head>
+  
+<body data-spy="scroll" data-target="#navbar-scroll" ng-app="mainApp" ng-controller="aboutCtrl">
+
+<!-- /.preloader -->
+<div id="preloader"></div>
+<div id="top"></div>
+    
+    
+<!-- NAVIGATION -->
+<div id="menu">
+	<nav class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-backyard">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand site-name" href="index.html"><img src="images/logo2.png" alt="logo"></a>
+			  </div>
+	 
+			  <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="#welcome">Who we are</a></li>
+					<li><a href="#Mission">Mission and Vision</a></li>
+					<li><a href="#Core">Core values</a></li>
+					<li><a href="#team">Our team</a></li>
+					<li><a href="#table">Unit Heads</a></li>
+				</ul>
+			  </div>
+		</div>
+	</nav>
+</div>
+    
+<!-- /.parallax full screen background image -->
+<div class="fullscreen landing parallax" style="background-image:url('images/bg2.jpg');" data-img-width="2000" data-img-height="1333" data-diff="100">
+	
+	<div class="overlay">
+		<div class="container">
+			<div class="col-md-10 col-md-offset-1 text-center">
+			
+				<!-- /.logo -->
+				<div class="logo wow fadeInDown" style="margin-top: 50px"> <a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+
+				<!-- /.main title -->
+					<h2 class="wow fadeInUp" style="margin-bottom: 50px">
+					About US
+					</h2>
+
+			</div>
+		</div> 
+	</div> 
+</div>
+
+<div id="welcome">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+			   <div class="text-center" style="padding-bottom: 20px;">
+					<h2 class="wow fadeInLeft">Welcome</h2>
+					<div class="title-line wow fadeInRight"></div>
+				</div>
+				<p ng-bind-html="aboutparas[0].Description"></p>
+				
+				<p ng-bind-html="aboutparas[1].Description"></p>
+			</div>
+		</div>
+	</div>
+</div>		
+				
+<div id="Mission">				
+	<div class="container">
+		<div class="row"> 
+		   <div class="text-center" style="padding-bottom: 20px;">
+				<h2 class="wow fadeInLeft">Mission &amp; Vision</h2>
+				<div class="title-line wow fadeInRight"></div>
+			</div>
+			<div class="col-sm-12">
+				<h3>Mission</h3>
+				<p ng-bind-html="aboutparas[2].Description"></p>
+				<h3 style="margin-top: 45px">Vision</h3>
+				<p ng-bind-html="aboutparas[3].Description"></p>				
+			</div>
+		</div>
+	</div>
+</div>
+  
+<div id="Core">				
+	<div class="container">
+	  <div class="row row-feat">
+	  	  <div class="text-center" style="padding-bottom: 20px;">
+			  <h2 class="wow fadeInLeft">Core Values</h2>
+			  <div class="title-line wow fadeInRight"></div>
+			</div>
+			<div class="col-sm-12 ">
+					<!-- /.feature  -->
+				<div ng-bind-html="aboutparas[4].Description"></div>
+			</div>
+	  </div>
+	</div>
+</div>
+
+<div id="team" class="section dark">
+	<div class="container">
+		<div class="row"> 
+		   <div class="text-center" style="padding-bottom: 20px;">
+				<h2 class="wow fadeInLeft">Our team</h2>
+				<div class="title-line wow fadeInRight"></div>
+			</div>
+			<div class="col-sm-12">
+				<div ng-bind-html="aboutparas[5].Description"></div>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="table">
+	<div class="container">
+        <table class="table table-bg table-bordered">
+				<thead>
+					<tr>
+						<th class="text-center">Department</th>
+						<th class="text-center">Name</th>
+						<th class="text-center">Title</th>
+						<th class="text-center"># of Doctors</th>
+						<th class="text-center"># of Technicians</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Anatomic Pathology</td>
+						<td>Dr. Ahmed Abd EL Aziz</td>
+						<td >
+							<ul>
+								<li>Head of Anatomic Pathology Unit </li>
+								<li>Professor of Pathology / Faculty of Medicine/Cairo University</li>
+							</ul>
+						</td>
+						<td class="text-center"><strong>11</strong></td>
+						<td class="text-center"><strong>6</strong></td>
+					</tr>
+				</tbody>
+			</table>
+	</div>
+</div>
+    
+    
+    
+    
+<!-- /.footer -->
+<footer id="footer">
+	<div class="container">
+		<div class="col-sm-4 col-sm-offset-4">
+			<!-- /.social links -->
+				<div class="social text-center">
+					<ul>
+						<li><a class="wow fadeInUp" href="https://twitter.com/almokhtabar"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="wow fadeInUp" href="https://www.facebook.com/almokhtabar" data-wow-delay="0.2s"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="wow fadeInUp" href="https://plus.google.com/" data-wow-delay="0.4s"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>	
+			<div class="text-center wow fadeInUp" style="font-size: 14px;">Copyright Almokhtabar developed by <a href="http://www.Yackeen.com">Yackeen</a></div>
+			<a href="#" class="scrollToTop"><i class="pe-7s-up-arrow pe-va"></i></a>
+		</div>	
+	</div>	
+</footer>
+	
+	<!-- /.javascript files -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   <!-- <script src="http://maps.google.com/maps/api/js?sensor=true"></script>-->  
+    <script src="js/jquery.sticky.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="js/plugins.js"></script>
+  </body>
+</html>
